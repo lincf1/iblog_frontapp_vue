@@ -1,7 +1,7 @@
 <template>
     <div>
         <span>
-            TEST
+            TEST: commit test 1
         </span>
     </div>
 </template>
