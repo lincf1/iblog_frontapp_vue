@@ -5,7 +5,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/index'
 import router from './router'
 import axios from 'axios'
+import VideoBg from 'vue-videobg'
 
+
+Vue.component('video-bg', VideoBg)
 Vue.use(ElementUI)
 
 Vue.prototype.$ajax = axios
@@ -18,7 +21,7 @@ new Vue({
   el: '#app',
   router,
   store: store,
-  components: { App },
+  components: { App, VideoBg },
   template: '<App/>'
 })
 

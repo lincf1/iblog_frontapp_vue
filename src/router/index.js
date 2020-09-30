@@ -2,6 +2,7 @@ import Vue from 'vue/dist/vue.esm.js'
 import Router from 'vue-router'
 import login from '@/views/index/login'
 import test from '@/views/index/test'
+// import videoTest from "@/views/index/videoTest";
 
 
 Vue.use(Router)
@@ -13,6 +14,7 @@ Router.prototype.push = function push (location) {
 
 export default new Router({
   routes: [
+    // {path: '/', name: 'videoTest', component: videoTest},
     {path: '/', name: 'login', component: login},
     {path: '/test', name: 'test', component: test}
   ]
